@@ -24,8 +24,8 @@ unsigned int readEeprom( unsigned long address )
     address_2 = ( address >> 8  ) & 0xFF;
     address_1 = ( address >> 0  ) & 0xFF;
 
-    display_1 = 1;
-    io = 1;
+    //display_1 = 1;
+    //io = 1;
 
     eeprom = 0;
     spi.write( READ );
@@ -48,8 +48,8 @@ void writeEeprom( unsigned long address, unsigned int data )
     address_2 = ( address >> 8  ) & 0xFF;
     address_1 = ( address >> 0  ) & 0xFF;
 
-    display_1 = 1;
-    io = 1;
+    //display_1 = 1;
+    //io = 1;
 
     eeprom = 0;
     spi.write( WREN );
